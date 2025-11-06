@@ -30,6 +30,38 @@ A few resources to get you started if this is your first Flutter project:
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
+In th terminal cd to the file Act15 
+Type "Fluttter pub get get"
+Then "Flutter run"
+Open with your desired connected device
+
+Home Screen
+When you open the app, you’ll see the Inventory List displaying all items stored in Firebase Firestore in real-time.
+Each item shows:
+Name
+Quantity
+Price
+Category
+You can:
+Tap the + Floating Action Button (FAB) to add a new item.
+Tap an item to edit or delete it.
+
+The search bar and category dropdown help you quickly find items.
+Search Bar: Type part of an item’s name to filter the list instantly.
+Example: typing “pen” shows all items with “pen” in their name.
+Category Filter: Use the dropdown menu at the top to filter items by category (e.g., “Electronics”, “Groceries”, etc.).
+Low Stock Filter: Items with low quantity (e.g., less than 5) are highlighted or can be filtered under “Low Stock”.
+
+
+Tap the Dashboard icon in the AppBar (or use the navigation button) to open the Insights Dashboard.
+This screen shows real-time analytics based on Firestore data:
+Total Unique Items = Count of all distinct inventory items.
+Total Inventory Value = Sum of (price × quantity) for all items.
+Out-of-Stock Items = A list of items where quantity = 0.
+
+All Firestore operations (add, update, delete) are reflected instantly in both the Inventory List and Dashboard.
+Firestore is used as the primary database, ensuring real-time sync across devices.
+
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
